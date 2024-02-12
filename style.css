@@ -253,3 +253,13 @@ nav ul li a:hover::after{
     background: #ff004f;
 
 }
+/* contact */
+.contact-left{
+    flex-basis: 35%;
+}
+.cotact-right{
+    flex-basis: 60%;
+}
+.contactg-left p{
+    
+}
