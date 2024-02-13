@@ -13,13 +13,15 @@
         <div class="container">
             <nav>
                 <img src="logo.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
@@ -145,24 +147,29 @@
                     <div class="row">
                         <div class="contact-left">
                             <h1 class="sub-title">Contact Me</h1>
-                            <p>rajaraja360parth@gmail.com</p>
-                            <p>6284889521</p>
+                            <p><i class="fa-solid fa-paper-plane"></i>rajaraja360parth@gmail.com</p>
+                            <p><i class="fa-solid fa-square-phone"></i>6284889521</p>
                             <div class="social-icons">
                                 <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
                                 <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
                                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                                 <a href="#"><i class="fa-brands fa-square-snapchat"></i></a>
                             </div>
+
+                            <a href="resume.pdf" download class="btn btn2" >Download CV</a>
                         </div>
                         <div class="contact-right">
                             <form>
                                 <input type="text" name="name" placeholder="Your Name" required>
                                 <input type="email" name="email" placeholder="Your Email" required>
                                 <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                                <button type="submit">Submit</button>
+                                <button type="submit" class="btn btn2">Submit</button>
                             </form>
                         </div>
                     </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © raja, created with <i class="fa-solid fa-heart"></i> by raja_berlin</p>
                 </div>
             </div>
         <!---JavaScript-->
@@ -183,6 +190,16 @@
 
             document.getElementById(tabname).classList.add("active-tab");
         }
+    </script>
+    <script>
+        var sidemeu = document.getElementByIdI("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
     </script>
 </body>
 </html>
